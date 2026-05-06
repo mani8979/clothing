@@ -43,7 +43,14 @@ export const SocialProof = () => {
 };
 
 export const InstagramStrip = () => {
-  const posts = ["/hero.png", "/tee.png", "/hoodie.png", "/pants.png", "/hero.png", "/tee.png"];
+  const posts = [
+    "/img/p1.jpeg",
+    "/img/p2.jpeg",
+    "/img/p3.jpeg",
+    "/img/p4.jpeg",
+    "/img/p5.jpeg",
+    "/img/p6.jpeg",
+  ];
   
   return (
     <section className="bg-black py-24 overflow-hidden">

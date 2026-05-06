@@ -39,12 +39,12 @@ export const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left Links - Desktop */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-12">
           {navLinks.slice(0, 2).map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-[10px] tracking-[0.3em] text-foreground hover:text-gold transition-colors duration-300"
+              className="text-[10px] tracking-[0.4em] text-foreground hover:text-gold transition-colors duration-300"
             >
               {link.name}
             </Link>
@@ -52,18 +52,18 @@ export const Navbar = () => {
         </div>
 
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center mx-8">
           <Image 
             src="/img/logo.jpeg" 
             alt="Logo" 
-            width={120} 
-            height={40} 
+            width={140} 
+            height={50} 
             className="object-contain"
           />
         </Link>
 
         {/* Right Links - Desktop */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-12">
           {navLinks.slice(2).map((link) => (
             <Link
               key={link.name}
